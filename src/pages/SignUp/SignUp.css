@@ -1,0 +1,97 @@
+@keyframes animacaoSignUp {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+}
+
+.contentSignUp{
+  display: flex;
+  flex-direction: column;
+  place-content: center; /*just e align item juntos*/
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  animation-name: animacaoSignUp;
+  animation-duration: 2s;
+}
+
+h1{
+  margin-bottom: 240x;
+}
+
+input{
+  color: #F4EDE8;
+  background: #212329;
+  border-radius: 10px;
+  border: 2px solid  #212329;
+  padding: 16px;
+  width: 100%;
+  margin-top: 8px;
+}
+
+input::placeholder{
+  color:  #d3d1cf;
+}
+
+button{
+  background: #ff9000;
+  height: 56px;
+  border-radius: 10px;
+  padding: 0 16px;
+  color: #312e38;
+  width: 100%;
+  font-weight: 500;
+  margin-top: 16px;
+ transition: background-color 0.5s;
+}
+
+button:hover{
+  background: #c46f01;
+}
+
+form{
+  margin: 80px, 0;
+  width: 340px;
+  text-align: center;
+}
+
+.Voltar{
+  color: #F4EDE8;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.Voltar:hover{
+  color: #adadab;
+}
+
+svg{
+  margin-right: 10px;
+}
+
+.background{
+  flex: 1; /*faz com que a imagem ocupe todo o espação menos 700px defino acima*/
+  background: url('C:\Users\Usuario\Documents\Documents\projects\Barber\frontend\src\assets\sign-in-up.png') no-repeat center;
+  background-size: cover;
+}
+
+.errorMessager{
+  color: red;
+  font-weight: bold;
+  margin-top: 8px;
+    
+}
